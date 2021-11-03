@@ -1,0 +1,91 @@
+
+
+html {
+    font-size: 62.5%;
+    background: #000 url(/globe.png)no-repeat fixed center center / cover;
+    
+}
+
+body {
+    font: 1.6rem sans-serif;
+    margin: 0;
+
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .8rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 254, 251);
+    outline: .1rem solid rgb(22, 22, 22);
+}
+
+p, figure, h1, h2, h3, h4, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 50rem;
+    margin: 5rem auto 1rem;
+    text-align: center;
+    background-color: #F8F8FF;
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
+    border-width: 0.1rem;
+    padding: 0.5rem;
+    margin-top: 8rem;
+
+}
+
+figure {
+    border: 0.3rem solid #F8F8FF;
+    background: #F8F8FF; 
+    margin: auto;
+    padding: 0.5rem;
+    }
+    img {
+    width: 100%;
+        display: block;
+    }
+
+figure h2 {
+    line-height: 4.5rem;
+
+}
+
+@media screen and (max-width: 60rem){
+    header h1{
+        margin-bottom: .1rem;
+        font-size: large;
+    }
+    main{
+        margin-top: 6rem;
+    }
+    figcaption h2{
+        font-size: large; 
+    }
+    figure{
+        position: sticky;
+        top: 0;
+        margin-bottom: .1rem;
+        border-bottom: 0;
+        box-shadow: none;
+        background-color: rgba(255,255,255,1);
+        z-index: 1;
+        
+    }
+    footer{
+        min-height: 50vh;
+    }
+}
